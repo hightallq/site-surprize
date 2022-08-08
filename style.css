@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-family: Nunito;
+}
+
+h1,h2,h3 {
+    font-family: Playfair Display;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid rgb(151, 103, 14);
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 2;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.hamburger-menu:hover {
+    transform: scale(1.2);
+}
+
+.line {
+    height: 5px;
+    width: 25px;
+    background-color: black;
+    margin: 3px;
+}
+
+aside {
+    position: absolute;
+    width: 0;
+    height: 30%;
+    top: 105px;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    background-color: rgb(48, 46, 46);
+    transition: all 600ms ease-out;
+    transition-delay: 100ms;
+    z-index: 2;
+    text-decoration: none;
+    color: white;
+}
+
+aside.active {
+    width: 100%;
+    height: 30%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    margin-top: 150px;
+    opacity: 0;
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+    transition: 600ms;
+}
+
+.active nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-family: Nunito;
+    padding: 5px;
+}
+
+main {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    background: #010101;
+    background: -webkit-linear-gradient(top left, #010101, #10014F);
+    background: -moz-linear-gradient(top left, #010101, #10014F);
+    background: linear-gradient(to bottom right, #010101, #10014F);
+    ;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.blue-text {
+    color: aqua;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.text {
+    margin-left: 10px;
+    color: white;
+}
+
+.text p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-family: Nunito;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.image {
+    max-width: 300px;
+}
+
+.Dio {
+    text-decoration: line-through;
+    color: red;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0D0141;
+    background: -webkit-linear-gradient(top left, #0D0141, #530101);
+    background: -moz-linear-gradient(top left, #0D0141, #530101);
+    background: linear-gradient(to bottom right, #0D0141, #530101);
+    text-align: center;
+    width: 350px;
+    height: 650px;
+    color: white;
+    border: 2px solid white;
+    margin: 10px 0;
+}
+
+.card img {
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+.congrats{
+    color: #a56464;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
